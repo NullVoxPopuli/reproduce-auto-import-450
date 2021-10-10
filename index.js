@@ -19,4 +19,11 @@ module.exports = {
       },
     },
   },
+
+  included(app) {
+    // Adds:
+    //  - ember-template-compiler
+    //  - @glimmer/syntax
+    app.import('vendor/ember/ember-template-compiler.js');
+  },
 };
